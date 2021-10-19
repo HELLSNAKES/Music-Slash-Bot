@@ -1,6 +1,8 @@
 const Discord = require("discord.js")
 const { version } = require("discord.js")
 const os = require("os")
+const botver = require("../../package.json").version
+
 module.exports = {
     name: "botinfo",
     description: "Send detailed info about the client",
@@ -43,6 +45,11 @@ module.exports = {
                 {
                     name: "<:node:879371469015097374> Node.js Version",
                     value: `${process.version}`,
+                    inline: true
+                },
+                {
+                    name: "<:github:882479353185833020> Bot Version",
+                    value: `v${botver}`,
                     inline: true
                 },
                 {
