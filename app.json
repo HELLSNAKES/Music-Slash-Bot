@@ -1,9 +1,9 @@
 {
-    "name": "discord-slash-bot",
-    "description": "About A fully customizable bot built with discord.js",
-    "repository": "https://github.com/Harmonynos/discord-slash-bot",
-    "logo": "https://avatars.githubusercontent.com/u/89950031?s=200&v=4",
-    "keywords": "Discord slash bot",
+    "name": "music-slash-bot",
+    "description": "a simple music bot using the slash command",
+    "repository": "https://github.com/HELLSNAKES/Music-Slash-Bot",
+    "logo": "https://i.imgur.com/xOXUzKx.png",
+    "keywords": "Music slash bot",
     "image": "heroku/nodejs",
     "buildpacks": [
         {
