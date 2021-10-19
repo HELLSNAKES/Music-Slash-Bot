@@ -1,0 +1,49 @@
+{
+  "name": "music-slash-bot",
+  "version": "2.0.0",
+  "description": "a simple music bot using the slash command",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HELLSNAKES/Music-Slash-Bot.git"
+  },
+  "author": "HELLSNAKES",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HELLSNAKES/Music-Slash-Bot/issues"
+  },
+  "homepage": "https://github.com/HELLSNAKES/Music-Slash-Bot#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "@distube/soundcloud": "^0.2.2",
+    "@distube/spotify": "^0.6.4",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.2.0",
+    "distube": "^3.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
+    "node-fetch": "^2.6.5",
+    "string-progressbar": "^1.0.4",
+    "ytdl-core": "^4.9.1"
+  },
+  "engines": {
+    "node": ">=16.x"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}
