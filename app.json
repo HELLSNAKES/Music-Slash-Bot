@@ -1,0 +1,40 @@
+{
+    "name": "discord-slash-bot",
+    "description": "About A fully customizable bot built with discord.js",
+    "repository": "https://github.com/Harmonynos/discord-slash-bot",
+    "logo": "https://avatars.githubusercontent.com/u/89950031?s=200&v=4",
+    "keywords": "Discord slash bot",
+    "image": "heroku/nodejs",
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "env": {
+        "token": {
+            "description": "The Discord Bot Token (https://discord.com/developers/applications)",
+            "required": true
+        },
+        "botID": {
+            "description": "Client_ID",
+            "required": true
+        },
+        "oauthv2link": {
+            "description": "oauthv2link. (https://discord.com/oauth2/authorize/)",
+            "required": false
+        },
+        "Admin": {
+            "description": "Adminbot",
+            "required": true
+        },
+        "ytcookie": {
+            "description": "youtube cookie",
+            "required": false
+        },
+        "twitch_url": {
+            "description": "twitch url | Example: https://www.twitch.tv/hellsnakes98",
+            "value": "https://www.twitch.tv/",
+            "required": false
+        }
+    }
+}
