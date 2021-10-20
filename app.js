@@ -16,6 +16,7 @@ Admin= Adminbot_ID
 oauthv2link= OAuth2 URL 
 ytcookie= Youtubecookie
 twitch_url= Twitch_url
+Channel_log= idchannel
     `)
     console.log("[Warn]", "Please edit the newly created .env file")
     process.exit()
@@ -79,6 +80,24 @@ client.on("interactionCreate", async (interaction) => {
             await interaction.reply({ content: ":x: There was an error while executing this command!", ephemeral: true })
         }
     }
+})
+client.on("guildCreate", guild => {
+    const embed = new MessageEmbed()
+        .setTitle("I'm added to a new server")
+        .setThumbnail(client.user.displayAvatarURL())
+        .setDescription(`I'm added to ${guild.name},with ${guild.memberCount}\nTotal server: ${client.guilds.cache.size}\nTotal users: ${client.users.cache.size}`)
+        .setTimestamp()
+    const logchannel = client.channels.cache.get(process.env.Channel_log)
+    logchannel.send({ embeds: [embed] })
+})
+client.on("guildDelete", guild => {
+    const embed = new MessageEmbed()
+        .setTitle("I'm left a new server")
+        .setThumbnail(client.user.displayAvatarURL())
+        .setDescription(`I'm left to ${guild.name},that had ${guild.memberCount}\nTotal server: ${client.guilds.cache.size}\nTotal users: ${client.users.cache.size}`)
+        .setTimestamp()
+    const logchannel = client.channels.cache.get(process.env.Channel_log)
+    logchannel.send({ embeds: [embed] })
 })
 // Distube
 const Distube = require("distube")
