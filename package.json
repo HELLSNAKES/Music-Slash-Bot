@@ -34,6 +34,7 @@
     "libsodium-wrappers": "^0.7.9",
     "node-fetch": "^2.6.5",
     "string-progressbar": "^1.0.4",
+    "winston": "^3.3.3",
     "ytdl-core": "^4.9.1"
   },
   "engines": {
