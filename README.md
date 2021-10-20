@@ -34,9 +34,9 @@
 1. Run `git clone https://github.com/HELLSNAKES/Music-Slash-Bot.git`
 2. Run `cd music-slash-bot`
 3. Run `npm i` to install the modules required
-4. Run `npm start` (If this is your first time running it will automatically generate .env file)
-5. Edit `.env` file
-6. Run the `npm start` again to get the bot working
+4. Rename `.env_example` to `.env`
+5. Edit `.env`
+
 ## Video Installation instructions
 
 - Deploy Heroku :
