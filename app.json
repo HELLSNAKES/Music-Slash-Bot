@@ -37,8 +37,7 @@
             "required": false
         },
         "Channel_log": {
-            "description": "twitch url | Example: https://www.twitch.tv/hellsnakes98",
-            "value": "https://www.twitch.tv/",
+            "description": "Channel id",
             "required": false
         }
     }
