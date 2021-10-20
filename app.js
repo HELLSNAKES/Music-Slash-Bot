@@ -2,25 +2,12 @@ const Discord = require("discord.js")
 require("dotenv").config()
 const { Client, Intents, MessageEmbed } = require("discord.js")
 const client = new Client({ intents: [Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILDS] })
-const { readdirSync, existsSync, writeFileSync } = require("fs")
+const { readdirSync } = require("fs")
 client.slash = new Discord.Collection()
 const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
 const path = require("path")
 const { keepalive } = require("./keepalive")
-if (!existsSync("./.env")) {
-    console.log("[Warn]", ".env not found in this directory. Creating a default one...")
-    writeFileSync("./.env", `token= TOKEN
-botID= Client_ID
-Admin= Adminbot_ID
-oauthv2link= OAuth2 URL 
-ytcookie= Youtubecookie
-twitch_url= Twitch_url
-Channel_log= idchannel
-    `)
-    console.log("[Warn]", "Please edit the newly created .env file")
-    process.exit()
-}
 const commands = []
 readdirSync("./commands/").map(async dir => {
     readdirSync(`./commands/${dir}/`).map(async (cmd) => {
