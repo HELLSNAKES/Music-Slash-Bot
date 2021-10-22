@@ -1,7 +1,10 @@
 const Discord = require("discord.js")
 require("dotenv").config()
 const { Client, Intents, MessageEmbed } = require("discord.js")
-const client = new Client({ intents: [Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILDS] })
+const client = new Client({
+    intents: [Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILDS],
+    ws: { properties: { $browser: "Discord iOS" } }
+})
 const { readdirSync } = require("fs")
 client.slash = new Discord.Collection()
 const { REST } = require("@discordjs/rest")
@@ -44,8 +47,8 @@ client.on("ready", () => {
         if (index === statuses.length) index = 0
         const status = statuses[index]
         client.user.setActivity(`${status}`, {
-            type: "STREAMING",
-            url: process.env.twitch_url
+            type: "LISTENING",
+            browser: "DISCORD IOS"
         })
         index++
     }, 60000)

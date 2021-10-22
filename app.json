@@ -31,11 +31,6 @@
             "description": "youtube cookie",
             "required": false
         },
-        "twitch_url": {
-            "description": "twitch url | Example: https://www.twitch.tv/hellsnakes98",
-            "value": "https://www.twitch.tv/",
-            "required": false
-        },
         "Channel_log": {
             "description": "Channel id",
             "required": false
