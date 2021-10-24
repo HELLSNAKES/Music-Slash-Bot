@@ -38,9 +38,7 @@ client.on("ready", () => {
     console.log("\x1b[34m%s\x1b[0m", `Logged in as ${client.user.tag}!`)
     const statuses = [ // status bot
         "Hentaiz",
-        `with ${client.guilds.cache.size} servers`,
-        `with ${client.channels.cache.size} channels`,
-        `with ${client.users.cache.size} users`
+        `with ${client.guilds.cache.size} servers`
     ]
     let index = 0
     setInterval(() => {
