@@ -3,6 +3,7 @@ const { joinVoiceChannel } = require("@discordjs/voice")
 module.exports = {
     name: "leave",
     description: "Leave voice channel",
+    timeout: 5000,
     run: async (interaction, client) => {
         const voiceChannel = interaction.member.voice.channel
         if (!voiceChannel) {

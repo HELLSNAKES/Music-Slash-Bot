@@ -6,6 +6,8 @@ const client = new Client({
     ws: { properties: { $browser: "Discord iOS" } }
 })
 const { readdirSync } = require("fs")
+const humanizeDuration = require("humanize-duration")
+const Timeout = new Set()
 client.slash = new Discord.Collection()
 const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
@@ -57,12 +59,21 @@ client.on("interactionCreate", async (interaction) => {
         if (!interaction.guild) return
         const command = client.slash.get(interaction.commandName)
         try {
+            if (command.timeout) {
+                if (Timeout.has(`${interaction.user.id}${command.name}`)) {
+                    return interaction.reply({ content: `You need to wait **${humanizeDuration(command.timeout, { round: true })}** to use command again`, ephemeral: true })
+                }
+            }
             if (command.permissions) {
                 if (!interaction.member.permissions.has(command.permissions)) {
                     return interaction.reply({ content: `:x: You need \`${command.permissions}\` to use this command`, ephemeral: true })
                 }
             }
             command.run(interaction, client)
+            Timeout.add(`${interaction.user.id}${command.name}`)
+            setTimeout(() => {
+                Timeout.delete(`${interaction.user.id}${command.name}`)
+            }, command.timeout)
         } catch (error) {
             console.error(error)
             await interaction.reply({ content: ":x: There was an error while executing this command!", ephemeral: true })

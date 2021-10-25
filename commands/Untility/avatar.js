@@ -10,6 +10,7 @@ module.exports = {
             type: 6
         }
     ],
+    timeout: 5000,
     run: async (interaction) => {
         const user = interaction.options.getUser("user") || interaction.user
         const embed = new Discord.MessageEmbed()

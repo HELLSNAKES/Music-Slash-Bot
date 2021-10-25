@@ -12,6 +12,7 @@ module.exports = {
             required: true
         }
     ],
+    timeout: 5000,
     run: async (interaction, client) => {
         const args = interaction.options.getNumber("amount")
         const queue = await client.distube.getQueue(interaction)

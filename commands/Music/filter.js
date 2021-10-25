@@ -73,6 +73,7 @@ module.exports = {
             ]
         }
     ],
+    timeout: 5000,
     run: async (interaction, client) => {
         const queue = await client.distube.getQueue(interaction)
         const choose = interaction.options.getString("filter-name")

@@ -3,6 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "invite",
     description: "invite url link",
+    timeout: 10000,
     run: async (interaction, client) => {
         if (process.env.oauthv2link === undefined) {
             interaction.reply({ content: "Missing `oauthv2link` in .env", ephemeral: true })

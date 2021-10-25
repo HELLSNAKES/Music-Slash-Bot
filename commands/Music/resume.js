@@ -3,6 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "resume",
     description: "Resumes the currently playing track",
+    timeout: 5000,
     run: async (interaction, client) => {
         const queue = await client.distube.getQueue(interaction)
         const voiceChannel = interaction.member.voice.channel

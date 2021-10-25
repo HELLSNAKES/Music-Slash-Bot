@@ -6,6 +6,7 @@ const botver = require("../../package.json").version
 module.exports = {
     name: "botinfo",
     description: "Send detailed info about the client",
+    timeout: 10000,
     run: async (interaction, client) => {
         const embed = new Discord.MessageEmbed()
             .setThumbnail(client.user.displayAvatarURL())

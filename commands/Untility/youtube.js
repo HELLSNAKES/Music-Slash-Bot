@@ -2,6 +2,7 @@ const fetch = require("node-fetch")
 module.exports = {
     name: "youtube",
     description: "Watch YouTube with your friends, on discord",
+    timeout: 5000,
     run: async (interaction, client) => {
         const voiceChannel = interaction.member.voice.channel
         if (!voiceChannel) {

@@ -3,6 +3,7 @@ const status = (queue) => `Volume: \`${queue.volume}%\` | Loop: \`${queue.repeat
 module.exports = {
     name: "nowplay",
     description: "Current song playing",
+    timeout: 5000,
     run: async (interaction, client) => {
         const queue = await client.distube.getQueue(interaction)
         const voiceChannel = interaction.member.voice.channel

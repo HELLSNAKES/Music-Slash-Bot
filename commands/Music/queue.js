@@ -3,6 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "queue",
     description: "Check queue",
+    timeout: 10000,
     run: async (interaction, client) => {
         const queue = await client.distube.getQueue(interaction)
         const voiceChannel = interaction.member.voice.channel
