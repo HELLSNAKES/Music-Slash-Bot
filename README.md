@@ -13,6 +13,8 @@
     <img alt="License" src="https://img.shields.io/github/license/HELLSNAKES/Music-Slash-Bot">
 </p>
 
+> Bot invite Url :  **[Link](https://discord.com/api/oauth2/authorize?client_id=898055197102866453&permissions=412320324672&scope=bot%20applications.commands)**
+
 ## Table of content
 
 * [Requirements](#Requirements)
@@ -22,7 +24,6 @@
 * [Contact](#Contact)
 * [Author](#Author)
 * [License](#License)
-* [Bot invite Url](#Bot-invite-Url)
 * [Deploy Heroku](#Deploy-Heroku)
 
 ## Requirements
@@ -63,8 +64,6 @@
 
 ## License
 Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/blob/main/LICENSE)
-
-## Bot invite Url :  **[Link](https://discord.com/api/oauth2/authorize?client_id=898055197102866453&permissions=412320324672&scope=bot%20applications.commands)**
 
 ## Deploy Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
