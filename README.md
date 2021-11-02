@@ -22,6 +22,7 @@
 * [Contact](#Contact)
 * [Author](#Author)
 * [License](#License)
+* [Bot invite Url](#Bot-invite-Url)
 * [Deploy Heroku](#Deploy-Heroku)
 
 ## Requirements
