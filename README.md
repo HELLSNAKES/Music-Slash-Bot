@@ -13,6 +13,8 @@
     <img alt="License" src="https://img.shields.io/github/license/HELLSNAKES/Music-Slash-Bot">
 </p>
 
+> Bot invite Url :  **[Link](https://discord.com/api/oauth2/authorize?client_id=898055197102866453&permissions=412320324672&scope=bot%20applications.commands)**
+
 ## Table of content
 
 * [Requirements](#Requirements)
