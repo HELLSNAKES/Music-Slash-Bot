@@ -38,6 +38,7 @@
 3. Run `npm i` to install the modules required
 4. Rename `.env_example` to `.env`
 5. Edit `.env`
+6. Run `npm start` to get the bot working
 
 ## Video Installation instructions
 
