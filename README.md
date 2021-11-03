@@ -40,6 +40,7 @@
 5. Edit `.env`
 6. Run `npm start` to get the bot working
 
+* Update Bot : `npm run updatebot`
 ## Video Installation instructions
 
 - Deploy Heroku :
