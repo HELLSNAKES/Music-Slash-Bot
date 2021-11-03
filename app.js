@@ -6,6 +6,7 @@ const client = new Client({
     ws: { properties: { $browser: "Discord iOS" } }
 })
 const { readdirSync } = require("fs")
+const moment = require("moment")
 const humanizeDuration = require("humanize-duration")
 const Timeout = new Set()
 client.slash = new Discord.Collection()
@@ -52,6 +53,27 @@ client.on("ready", () => {
         })
         index++
     }, 60000)
+})
+client.on("messageCreate", async (message) => {
+    if (message.attachments.first() !== undefined && message.content !== "") {
+        console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) messaged in ${message.channel.id}: ${message.content}`)
+        console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) sent an attachment in ${message.channel.id}: ${message.attachments.first().url}`)
+    } else if (message.attachments.first() !== undefined && message.content === "") {
+        console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) sent an attachment in ${message.channel.id}: ${message.attachments.first().url}`)
+    } else if (message.attachments.first() === undefined && message.content !== "") {
+        console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) messaged in ${message.channel.id}: ${message.content}`)
+    } else {
+        if (message.embeds.length !== 0) {
+            const a = message.embeds[0]
+            const embed = {}
+            for (const b in a) {
+                if (a[b] != null && (a[b] !== [] && a[b].length !== 0) && a[b] !== {}) {
+                    embed[b] = a[b]
+                }
+            }
+            console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) sent an embed in ${message.channel.id}: ${JSON.stringify(embed, null, 2)}`)
+        }
+    }
 })
 client.on("interactionCreate", async (interaction) => {
     if (interaction.isCommand() || interaction.isContextMenu()) {
