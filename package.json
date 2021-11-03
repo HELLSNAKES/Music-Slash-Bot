@@ -8,7 +8,9 @@
     "start": "node app.js",
     "updatebot": "node Updatebot.js",
     "lint": "eslint ./",
-    "lint:fix": "eslint --fix ./"
+    "lint:fix": "eslint --fix ./",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "repository": {
     "type": "git",
@@ -42,6 +44,7 @@
     "node": ">=16.x"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.20.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",

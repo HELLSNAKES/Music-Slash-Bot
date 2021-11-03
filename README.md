@@ -69,3 +69,22 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 
 ## Deploy Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/HELLSNAKES"><img src="https://avatars.githubusercontent.com/u/63496374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HELLSNAKE</b></sub></a><br /><a href="https://github.com/HELLSNAKES/Music-Slash-Bot/commits?author=HELLSNAKES" title="Code">💻</a> <a href="#example-HELLSNAKES" title="Examples">💡</a> <a href="https://github.com/HELLSNAKES/Music-Slash-Bot/commits?author=HELLSNAKES" title="Tests">⚠️</a> <a href="#tutorial-HELLSNAKES" title="Tutorials">✅</a></td>
+    <td align="center"><a href="https://github.com/shellawa"><img src="https://avatars.githubusercontent.com/u/69383963?v=4?s=100" width="100px;" alt=""/><br /><sub><b>allehS</b></sub></a><br /><a href="https://github.com/HELLSNAKES/Music-Slash-Bot/commits?author=shellawa" title="Code">💻</a> <a href="#ideas-shellawa" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/HELLSNAKES/Music-Slash-Bot/commits?author=shellawa" title="Tests">⚠️</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->

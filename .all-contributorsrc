@@ -1,0 +1,38 @@
+{
+  "projectName": "Music-Slash-Bot",
+  "projectOwner": "HELLSNAKES",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [
+    {
+      "login": "HELLSNAKES",
+      "name": "HELLSNAKE",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63496374?v=4",
+      "profile": "https://github.com/HELLSNAKES",
+      "contributions": [
+        "code",
+        "example",
+        "test",
+        "tutorial"
+      ]
+    },
+    {
+      "login": "shellawa",
+      "name": "allehS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69383963?v=4",
+      "profile": "https://github.com/shellawa",
+      "contributions": [
+        "code",
+        "ideas",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
