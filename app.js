@@ -133,7 +133,7 @@ const { SpotifyPlugin } = require("@distube/spotify")
 client.distube = new Distube.default(client, {
     leaveOnEmpty: true,
     emptyCooldown: 30,
-    leaveOnFinish: true,
+    leaveOnFinish: false,
     emitNewSongOnly: true,
     updateYouTubeDL: true,
     nsfw: true,
