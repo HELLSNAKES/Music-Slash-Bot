@@ -42,11 +42,11 @@ client.on("ready", () => {
     const statuses = [ // status bot
         "Hentaiz",
         `with ${client.guilds.cache.size} servers`,
-        `Youtube`,
-        `Slash command`,
-        `Spotify`,
-        `soundcloud`,
-        `Twitch`
+        "Youtube",
+        "Slash command",
+        "Spotify",
+        "soundcloud",
+        "Twitch"
     ]
     let index = 0
     setInterval(() => {
@@ -174,8 +174,8 @@ client.distube
         console.error(e)
         textChannel.send(`An error encountered: ${e}`)
     })
-    //.on("finish", queue => queue.textChannel.send("***No more song in queue. Leaving the channel***"))
-    .on('finishSong', queue => queue.textChannel.send("***Finish song!***"))
+    // .on("finish", queue => queue.textChannel.send("***No more song in queue. Leaving the channel***"))
+    .on("finishSong", queue => queue.textChannel.send("***Finish song!***"))
     .on("disconnect", queue => queue.textChannel.send("***Disconnected!***"))
     .on("empty", queue => queue.textChannel.send("***Channel is empty. Leaving the channel!***"))
     .on("initQueue", (queue) => {
