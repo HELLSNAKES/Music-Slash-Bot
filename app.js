@@ -126,13 +126,11 @@ client.on("guildDelete", guild => {
     logchannel.send({ embeds: [embed] })
 })
 // Server under 5 user bot automatically left
-client.on("ready", () => {
+client.on("guildCreate", () => {
     if (process.env.Bot_leave_under_5_user === "true") {
         client.guilds.cache.forEach(guild => {
             if (guild.memberCount < 5) {
-                setTimeout(() => {
-                    guild.leave()
-                }, 5000)
+                guild.leave()
             }
         })
     }
