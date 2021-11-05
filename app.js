@@ -187,6 +187,7 @@ client.login(process.env.token)
 // check update repo
 const fetch = require("node-fetch")
 const { version } = require("./version.json")
+console.log("\x1b[33m%s\x1b[0m", `Current version : ${version}`)
 fetch("https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/version.json")
     .then((res) => res.json())
     .then((data) => {
