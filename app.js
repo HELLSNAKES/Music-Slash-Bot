@@ -125,6 +125,18 @@ client.on("guildDelete", guild => {
     const logchannel = client.channels.cache.get(process.env.Channel_log)
     logchannel.send({ embeds: [embed] })
 })
+// Server under 5 user bot automatically left
+client.on("ready", () => {
+    if (process.env.Bot_leave_under_5_user === "true") {
+        client.guilds.cache.forEach(guild => {
+            if (guild.memberCount < 5) {
+                setTimeout(() => {
+                    guild.leave()
+                }, 5000)
+            }
+        })
+    }
+})
 // Distube
 const Distube = require("distube")
 const { SoundCloudPlugin } = require("@distube/soundcloud")

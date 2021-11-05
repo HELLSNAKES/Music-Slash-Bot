@@ -34,6 +34,10 @@
         "Channel_log": {
             "description": "Channel id",
             "required": false
+        },
+        "Bot_leave_under_5_user": {
+            "description": "less than 5 bot users will automatically leave | true or false",
+            "required": false
         }
     }
 }
