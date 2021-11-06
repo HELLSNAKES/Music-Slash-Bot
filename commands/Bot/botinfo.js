@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const { version } = require("discord.js")
 const os = require("os")
-const botver = require("../../package.json").version
+const botver = require("../../version.json").version
 
 module.exports = {
     name: "botinfo",
