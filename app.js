@@ -42,6 +42,7 @@ client.on("ready", () => {
     const statuses = [ // status bot
         "Hentaiz",
         `with ${client.guilds.cache.size} servers`,
+        `with ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)} users`,
         "Youtube",
         "Slash command",
         "Spotify",
