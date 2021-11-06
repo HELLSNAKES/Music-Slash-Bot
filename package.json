@@ -10,7 +10,8 @@
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "dev" : "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0"
+    "eslint-plugin-promise": "^5.1.0",
+    "nodemon": "^2.0.14"
   }
 }
