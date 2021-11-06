@@ -30,7 +30,7 @@ module.exports = {
                 },
                 {
                     name: "<:user:879371469048664115> Users",
-                    value: `Serving ${client.users.cache.size} users.`,
+                    value: `Serving ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)} users.`,
                     inline: true
                 },
                 {
