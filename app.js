@@ -126,14 +126,17 @@ client.on("guildDelete", guild => {
     logchannel.send({ embeds: [embed] })
 })
 // Server under 5 user bot automatically left
-client.on("guildCreate", () => {
-    if (process.env.Bot_leave_under_5_user === "true") {
-        client.guilds.cache.forEach(guild => {
-            if (guild.memberCount < 5) {
-                guild.leave()
-            }
-        })
-    }
+client.on("ready", () => {
+    setInterval(() => {
+        if (process.env.Bot_leave_under_5_user === "true") {
+            client.guilds.cache.forEach(async guild => {
+                if (guild.memberCount <= 5) {
+                    console.log("AUTO-LEAVE", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${guild.name} (${guild.id}) has ${guild.memberCount} members, bot automatically left`)
+                    await guild.leave()
+                }
+            })
+        }
+    }, 600000000)
 })
 // Distube
 const Distube = require("distube")
