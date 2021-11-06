@@ -196,7 +196,15 @@ client.distube
         queue.volume = 50
     })
 keepalive()
+if (!process.env.token) {
+    console.error("[ERROR]", "Token not found please visit: https://discord.com/developers/application to get token")
+    process.exit(0)
+}
 client.login(process.env.token)
+process.on("SIGINT", () => {
+    console.log("\x1b[36m%s\x1b[0m", "SIGINT detected, exiting...")
+    process.exit(0)
+})
 // check update repo
 const fetch = require("node-fetch")
 const { version } = require("./version.json")
