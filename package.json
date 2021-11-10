@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "updatebot": "node Updatebot.js",
+    "updatebot": "node scripts/updatebot.js",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "dev" : "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -31,10 +31,11 @@
     "@distube/spotify": "^0.6.4",
     "discord-api-types": "^0.24.0",
     "discord.js": "^13.3.0",
-    "distube": "^3.0.1",
+    "distube": "^3.0.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "ffmpeg-static": "^4.4.0",
+    "genius-lyrics-api": "^3.2.0",
     "humanize-duration": "^3.27.0",
     "libsodium-wrappers": "^0.7.9",
     "moment": "^2.29.1",
