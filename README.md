@@ -72,7 +72,7 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
 
 ## Replit
-[Fork](https://replit.com/@hellsnakes/music-slash-bot?v=1)
+[![Replit](https://replit.com/badge/github/HELLSNAKES/Music-Slash-Bot)](https://replit.com/@hellsnakes/music-slash-bot?v=1)
 
 ## Contributors ✨
 
