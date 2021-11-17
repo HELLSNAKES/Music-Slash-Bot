@@ -25,6 +25,7 @@
 * [Author](#Author)
 * [License](#License)
 * [Deploy Heroku](#Deploy-Heroku)
+* [Replit](#Replit)
 
 ## Requirements
 1. Nodejs>=16: **[Link](https://nodejs.org)**
@@ -69,9 +70,9 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 
 ## Deploy Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
-## Replit
 
-* [Fork](https://replit.com/@hellsnakes/music-slash-bot?v=1)
+## Replit
+[Fork](https://replit.com/@hellsnakes/music-slash-bot?v=1)
 
 ## Contributors ✨
 
