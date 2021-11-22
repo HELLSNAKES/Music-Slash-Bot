@@ -160,13 +160,13 @@ client.distube
     .on("playSong", (queue, song) => {
         const embed = new MessageEmbed()
             .setColor("RANDOM")
-            .setAuthor("Started Playing", `https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif`)
+            .setAuthor("Started Playing", "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif")
             .setThumbnail(song.thumbnail)
             .setDescription(`[${song.name}](${song.url})`)
-            .addField("**Views:**", song.views.toString(),true)
-            .addField("**Like:**", song.likes.toString(),true)
-            .addField("**Dislike:**", song.dislikes.toString(),true)
-            .addField("**Duration:**", song.formattedDuration.toString(),true)
+            .addField("**Views:**", song.views.toString(), true)
+            .addField("**Like:**", song.likes.toString(), true)
+            .addField("**Dislike:**", song.dislikes.toString(), true)
+            .addField("**Duration:**", song.formattedDuration.toString(), true)
             .addField("**Status**", status(queue).toString())
             .setFooter(`Requested by ${song.user.username}`, song.user.avatarURL())
             .setTimestamp()
@@ -193,9 +193,21 @@ client.distube
         textChannel.send(`An error encountered: ${e}`)
     })
     // .on("finish", queue => queue.textChannel.send("***No more song in queue. Leaving the channel***"))
-    .on("finishSong", queue => queue.textChannel.send("***Finish song!***"))
-    .on("disconnect", queue => queue.textChannel.send("***Disconnected!***"))
-    .on("empty", queue => queue.textChannel.send("***Channel is empty. Leaving the channel!***"))
+    .on("finishSong", queue => {
+        const embed = new MessageEmbed()
+            .setDescription(`:white_check_mark: | Finished playing \`${queue.songs[0].name}\``)
+        queue.textChannel.send({ embeds: [embed] })
+    })
+    .on("disconnect", queue => {
+        const embed = new MessageEmbed()
+            .setDescription(":x: | Disconnected from voice channel")
+        queue.textChannel.send({ embeds: [embed] })
+    })
+    .on("empty", queue => {
+        const embed = new MessageEmbed()
+            .setDescription(":x: | Channel is empty. Leaving the channel!")
+        queue.textChannel.send({ embeds: [embed] })
+    })
     .on("initQueue", (queue) => {
         queue.autoplay = false
         queue.volume = 50
