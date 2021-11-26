@@ -74,6 +74,9 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 ## Replit
 [![Replit](https://replit.com/badge/github/HELLSNAKES/Music-Slash-Bot)](https://replit.com/@hellsnakes/music-slash-bot?v=1)
 
+## Server Support 
+<img src="https://discordapp.com/api/guilds/913576764528295947/widget.png?style=banner4" alt="Discord Banner 4"/>
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people
