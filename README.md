@@ -11,6 +11,8 @@
     <img alt="Commit" src="https://img.shields.io/github/commit-activity/y/HELLSNAKES/Music-Slash-Bot">
     <img alt="Version" src="https://img.shields.io/github/package-json/v/HELLSNAKES/Music-Slash-Bot">
     <img alt="License" src="https://img.shields.io/github/license/HELLSNAKES/Music-Slash-Bot">
+    <img alt="Discord" src="https://discordapp.com/api/guilds/913576764528295947/widget.png?style=shield" />
+
 </p>
 
 > Bot invite Url :  **[Link](https://discord.com/api/oauth2/authorize?client_id=898055197102866453&permissions=412320324672&scope=bot%20applications.commands)**
