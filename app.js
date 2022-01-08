@@ -165,7 +165,6 @@ client.distube
             .setDescription(`[${song.name}](${song.url})`)
             .addField("**Views:**", song.views.toString(), true)
             .addField("**Like:**", song.likes.toString(), true)
-            .addField("**Dislike:**", song.dislikes.toString(), true)
             .addField("**Duration:**", song.formattedDuration.toString(), true)
             .addField("**Status**", status(queue).toString())
             .setFooter(`Requested by ${song.user.username}`, song.user.avatarURL())

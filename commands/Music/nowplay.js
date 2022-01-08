@@ -25,7 +25,6 @@ module.exports = {
             .setDescription(`[${song.name}](${song.url})`)
             .addField("**Views:**", song.views.toString(), true)
             .addField("**Like:**", song.likes.toString(), true)
-            .addField("**Dislike:**", song.dislikes.toString(), true)
             .addField("**Duration:**", `${queue.formattedCurrentTime} / ${song.formattedDuration}`)
             .addField("**Link**", `[Download This Song](${song.streamURL})`)
             .addField("**Status**", status(queue).toString())
