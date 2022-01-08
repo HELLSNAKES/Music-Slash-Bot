@@ -26,9 +26,9 @@
   "dependencies": {
     "@discordjs/opus": "^0.5.3",
     "@discordjs/rest": "^0.1.0-canary.0",
-    "@discordjs/voice": "^0.6.0",
-    "@distube/soundcloud": "^0.2.2",
-    "@distube/spotify": "^0.6.4",
+    "@discordjs/voice": "^0.7.5",
+    "@distube/soundcloud": "^1.0.0",
+    "@distube/spotify": "^1.0.0",
     "discord-api-types": "^0.26.0",
     "discord.js": "^13.5.1",
     "distube": "^3.0.5",
