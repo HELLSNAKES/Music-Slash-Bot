@@ -1,3 +1,4 @@
+// https://github.com/RemyK888/discord-together/blob/main/src/DiscordTogether.js
 const fetch = require("node-fetch")
 module.exports = {
     name: "together",
