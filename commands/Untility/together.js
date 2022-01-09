@@ -31,7 +31,7 @@ module.exports = {
                 },
                 {
                     name: "lettertile",
-                    value: "79863686565621790"
+                    value: "879863686565621790"
                 },
                 {
                     name: "wordsnack",
