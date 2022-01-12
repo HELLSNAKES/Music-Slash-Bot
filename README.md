@@ -28,6 +28,7 @@
 * [License](#License)
 * [Deploy Heroku](#Deploy-Heroku)
 * [Replit](#Replit)
+* [Project Activity](#Project-Activity)
 
 ## Requirements
 1. Nodejs>=16: **[Link](https://nodejs.org)**
@@ -78,6 +79,10 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 
 ## Server Support 
 <img src="https://discordapp.com/api/guilds/913576764528295947/widget.png?style=banner4" alt="Discord Banner 4"/>
+
+## Project Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/6e1425a9a3307f0cb5022349e029f034239ed487.svg "Repobeats analytics image")
 
 ## Contributors ✨
 
