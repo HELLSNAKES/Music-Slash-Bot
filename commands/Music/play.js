@@ -24,7 +24,7 @@ module.exports = {
         }
         await interaction.reply("🔍 **Searching and attempting...**")
         await interaction.editReply("Searching done :ok_hand: ")
-        client.distube.playVoiceChannel(voiceChannel, query, {
+        client.distube.play(voiceChannel, query, {
             textChannel: interaction.channel,
             member: interaction.member
         })
