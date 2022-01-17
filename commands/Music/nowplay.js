@@ -21,7 +21,7 @@ module.exports = {
         }
         const song = queue.songs[0]
         const embed = new Discord.MessageEmbed()
-            .setAuthor("Now Playing", "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif")
+            .setAuthor({ name: 'Now Playing', iconURL: 'https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif' })
             .setDescription(`[${song.name}](${song.url})`)
             .addField("**Views:**", song.views.toString(), true)
             .addField("**Like:**", song.likes.toString(), true)
@@ -30,7 +30,7 @@ module.exports = {
             .addField("**Status**", status(queue).toString())
             .setThumbnail(song.thumbnail)
             .setColor("RANDOM")
-            .setFooter(`Requested by ${song.user.username}`, song.user.avatarURL())
+            .setFooter({ text: `Requested by ${song.user.username}`, iconURL: song.user.avatarURL() })
             .setTimestamp()
         return interaction.reply({ embeds: [embed] })
     }

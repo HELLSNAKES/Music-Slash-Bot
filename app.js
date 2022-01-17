@@ -167,7 +167,7 @@ client.distube
             .addField("**Like:**", song.likes.toString(), true)
             .addField("**Duration:**", song.formattedDuration.toString(), true)
             .addField("**Status**", status(queue).toString())
-            .setFooter(`Requested by ${song.user.username}`, song.user.avatarURL())
+            .setFooter({ text: `Requested by ${song.user.username}`, iconURL: song.user.avatarURL() })
             .setTimestamp()
         queue.textChannel.send({ embeds: [embed] })
     })
