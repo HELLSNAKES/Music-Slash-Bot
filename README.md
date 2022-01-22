@@ -50,6 +50,7 @@
 - Deploy Heroku :
 
  [![Heroku](https://i.ytimg.com/vi/suCg-Di14Dk/maxresdefault.jpg)](https://youtu.be/suCg-Di14Dk)
+ 
 
 - Window :
 > Coming soon
@@ -73,6 +74,9 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 
 ## Deploy Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
+
+Note: Heroku Button is currently not working -> [Issues](https://github.com/HELLSNAKES/Music-Slash-Bot/issues/6)
+
 
 ## Replit
 [![Replit](https://replit.com/badge/github/HELLSNAKES/Music-Slash-Bot)](https://replit.com/@hellsnakes/music-slash-bot?v=1)
