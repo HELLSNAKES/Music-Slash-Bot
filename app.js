@@ -160,7 +160,7 @@ client.distube
     .on("playSong", (queue, song) => {
         const embed = new MessageEmbed()
             .setColor("RANDOM")
-            .setAuthor({ name: 'Started Playing', iconURL: 'https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif'})
+            .setAuthor({ name: "Started Playing", iconURL: "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif" })
             .setThumbnail(song.thumbnail)
             .setDescription(`[${song.name}](${song.url})`)
             .addField("**Views:**", song.views.toString(), true)

@@ -21,7 +21,7 @@ module.exports = {
         }
         const song = queue.songs[0]
         const embed = new Discord.MessageEmbed()
-            .setAuthor({ name: 'Now Playing', iconURL: 'https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif' })
+            .setAuthor({ name: "Now Playing", iconURL: "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif" })
             .setDescription(`[${song.name}](${song.url})`)
             .addField("**Views:**", song.views.toString(), true)
             .addField("**Like:**", song.likes.toString(), true)
