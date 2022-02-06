@@ -28,10 +28,11 @@
     "@discordjs/rest": "^0.1.0-canary.0",
     "@discordjs/voice": "^0.7.5",
     "@distube/soundcloud": "^1.1.0",
-    "@distube/spotify": "^1.1.0",
+    "@distube/spotify": "^1.2.1",
+    "@distube/yt-dlp": "^0.0.2",
     "discord-api-types": "^0.26.0",
     "discord.js": "^13.6.0",
-    "distube": "^3.2.0",
+    "distube": "^3.3.1-1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "ffmpeg-static": "^4.4.0",
@@ -41,7 +42,7 @@
     "moment": "^2.29.1",
     "node-fetch": "^2.6.7",
     "string-progressbar": "^1.0.4",
-    "ytdl-core": "^4.9.1"
+    "ytdl-core": "^4.10.1"
   },
   "engines": {
     "node": ">=16.0.0"
