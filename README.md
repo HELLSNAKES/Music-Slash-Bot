@@ -81,9 +81,6 @@ Note: Heroku Button is currently not working -> [Issues](https://github.com/HELL
 ## Replit
 [![Replit](https://replit.com/badge/github/HELLSNAKES/Music-Slash-Bot)](https://replit.com/@hellsnakes/music-slash-bot?v=1)
 
-## Server Support 
-<img src="https://discordapp.com/api/guilds/913576764528295947/widget.png?style=banner4" alt="Discord Banner 4"/>
-
 ## Project Activity
 
 ![Alt](https://repobeats.axiom.co/api/embed/6e1425a9a3307f0cb5022349e029f034239ed487.svg "Repobeats analytics image")
