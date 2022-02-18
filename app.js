@@ -126,19 +126,6 @@ client.on("guildDelete", guild => {
     const logchannel = client.channels.cache.get(process.env.Channel_log)
     logchannel.send({ embeds: [embed] })
 })
-// Server under 5 user bot automatically left
-client.on("ready", () => {
-    setInterval(() => {
-        if (process.env.Bot_leave_under_5_user === "true") {
-            client.guilds.cache.forEach(async guild => {
-                if (guild.memberCount <= 5) {
-                    console.log("AUTO-LEAVE", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${guild.name} (${guild.id}) has ${guild.memberCount} members, bot automatically left`)
-                    await guild.leave()
-                }
-            })
-        }
-    }, 600000000)
-})
 // Distube
 const Distube = require("distube")
 const { SoundCloudPlugin } = require("@distube/soundcloud")
