@@ -11,7 +11,6 @@
     <img alt="Commit" src="https://img.shields.io/github/commit-activity/y/HELLSNAKES/Music-Slash-Bot">
     <img alt="Version" src="https://img.shields.io/github/package-json/v/HELLSNAKES/Music-Slash-Bot">
     <img alt="License" src="https://img.shields.io/github/license/HELLSNAKES/Music-Slash-Bot">
-    <img alt="Discord" src="https://discordapp.com/api/guilds/913576764528295947/widget.png?style=shield" />
 
 </p>
 
@@ -27,7 +26,6 @@
 * [Author](#Author)
 * [License](#License)
 * [Deploy Heroku](#Deploy-Heroku)
-* [Replit](#Replit)
 * [Project Activity](#Project-Activity)
 
 ## Requirements
@@ -76,10 +74,6 @@ Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/b
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
 
 Note: Heroku Button is currently not working -> [Issues](https://github.com/HELLSNAKES/Music-Slash-Bot/issues/6)
-
-
-## Replit
-[![Replit](https://replit.com/badge/github/HELLSNAKES/Music-Slash-Bot)](https://replit.com/@hellsnakes/music-slash-bot?v=1)
 
 ## Project Activity
 
