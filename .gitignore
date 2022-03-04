@@ -1,4 +1,0 @@
-.env
-node_modules
-commands/Music/search.js
-commands/Music/lyric.js
