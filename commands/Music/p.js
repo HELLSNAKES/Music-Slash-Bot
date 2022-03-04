@@ -1,5 +1,5 @@
 module.exports = {
-    name: "play",
+    name: "p",
     description: "Playing music",
     options: [
         {
