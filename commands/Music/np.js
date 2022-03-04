@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const status = (queue) => `Volume: \`${queue.volume}%\` | Loop: \`${queue.repeatMode ? queue.repeatMode === 2 ? "All Queue" : "This Song" : "Off"}\` | Autoplay: \`${queue.autoplay ? "On" : "Off"}\` | Filter: \`${queue.filters.join(", ") || "Off"}\``
 module.exports = {
-    name: "nowplay",
+    name: "np",
     description: "Current song playing",
     timeout: 5000,
     run: async (interaction, client) => {
