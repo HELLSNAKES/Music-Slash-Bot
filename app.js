@@ -39,27 +39,9 @@ const rest = new REST({ version: "9" }).setToken(process.env.token);
 })
 client.on("ready", () => {
     console.log("\x1b[34m%s\x1b[0m", `Logged in as ${client.user.tag}!`)
-    const statuses = [ // status bot
-        "Hentaiz",
-        `with ${client.guilds.cache.size} servers`,
-        `with ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)} users`,
-        "Youtube",
-        "Slash command",
-        "Spotify",
-        "soundcloud",
-        "Twitch"
-    ]
-    let index = 0
-    setInterval(() => {
-        if (index === statuses.length) index = 0
-        const status = statuses[index]
-        client.user.setActivity(`${status}`, {
-            type: "LISTENING",
-            browser: "DISCORD IOS"
-        })
-        index++
-    }, 60000)
+        client.user.setActivity(`/play`)
 })
+/*
 client.on("messageCreate", async (message) => {
     if (message.attachments.first() !== undefined && message.content !== "") {
         console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) messaged in ${message.channel.id}: ${message.content}`)
@@ -80,7 +62,7 @@ client.on("messageCreate", async (message) => {
             console.log("\x1b[32m%s\x1b[0m", `[${moment().format("YYYY-MM-DD HH:mm:ss")}] ${message.author.username} (${message.author.id}) sent an embed in ${message.channel.id}: ${JSON.stringify(embed, null, 2)}`)
         }
     }
-})
+})*/
 client.on("interactionCreate", async (interaction) => {
     if (interaction.isCommand() || interaction.isContextMenu()) {
         if (!client.slash.has(interaction.commandName)) return
