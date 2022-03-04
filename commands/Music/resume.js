@@ -23,7 +23,6 @@ module.exports = {
             await client.distube.resume(interaction)
             await interaction.reply("***Resumed the current track***")
             const message = await interaction.fetchReply()
-            await message.react("▶")
         } catch {
             interaction.reply({ content: "The queue has been playing already", ephemeral: true })
         }
