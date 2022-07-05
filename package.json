@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/HELLSNAKES/Music-Slash-Bot#readme",
   "dependencies": {
-    "@discordjs/opus": "^0.5.3",
+    "@discordjs/opus": "^0.8.0",
     "@discordjs/rest": "^0.1.0-canary.0",
     "@discordjs/voice": "^0.7.5",
     "@distube/soundcloud": "^1.1.0",
