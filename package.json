@@ -39,7 +39,7 @@
     "genius-lyrics-api": "^3.2.0",
     "humanize-duration": "^3.27.0",
     "libsodium-wrappers": "^0.7.9",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "node-fetch": "^2.6.7",
     "string-progressbar": "^1.0.4",
     "ytdl-core": "^4.10.1"
