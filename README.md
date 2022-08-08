@@ -48,6 +48,7 @@
 - Deploy Heroku :
 
  [![Heroku](https://i.ytimg.com/vi/suCg-Di14Dk/maxresdefault.jpg)](https://youtu.be/suCg-Di14Dk)
+ [![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/HELLSNAKES/Music-Slash-Bot)
  
 
 - Window :
