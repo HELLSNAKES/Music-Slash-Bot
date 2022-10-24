@@ -40,14 +40,11 @@ const rest = new REST({ version: "9" }).setToken(process.env.token);
 client.on("ready", () => {
     console.log("\x1b[34m%s\x1b[0m", `Logged in as ${client.user.tag}!`)
     const statuses = [ // status bot
-        "Hentaiz",
+        "Spotify",
         `with ${client.guilds.cache.size} servers`,
         `with ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)} users`,
-        "Youtube",
-        "Slash command",
-        "Spotify",
-        "soundcloud",
-        "Twitch"
+        "By ๖̶ζ͜͡North...!#3983",
+        "Slash command"
     ]
     let index = 0
     setInterval(() => {
