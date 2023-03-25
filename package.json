@@ -34,7 +34,7 @@
     "discord.js": "^13.6.0",
     "distube": "^3.3.1-1",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ffmpeg-static": "^4.4.0",
     "genius-lyrics-api": "^3.2.0",
     "humanize-duration": "^3.27.0",
