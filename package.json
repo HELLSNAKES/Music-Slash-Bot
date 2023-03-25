@@ -30,6 +30,7 @@
     "@distube/soundcloud": "^1.1.0",
     "@distube/spotify": "^1.2.1",
     "@distube/yt-dlp": "^0.0.2",
+    "@distube/ytdl-core": "^4.11.7",
     "discord-api-types": "^0.26.0",
     "discord.js": "^13.6.0",
     "distube": "^3.3.1-1",
