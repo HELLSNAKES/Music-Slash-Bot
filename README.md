@@ -53,7 +53,7 @@
 > Coming soon
 
 ## Contributing
-1. [Fork the repository](https://github.com/HELLSNAKES/Music-Slash-Bot/fork)
+1. [Fork the repository](https://github.com/NguyenVietCuong-2512/Music-Slash-Bot/fork)
 2. Clone your fork: `git clone https://github.com/your-username/music-slash-bot.git`
 3. Create your feature branch: `git checkout -b <branch-name>`
 4. Commit your changes: `git commit -m <commit message>`
@@ -61,18 +61,18 @@
 6. Submit a pull request
 
 ## Contact
-* HELLSNAKE - [Facebook](https://www.facebook.com/hellsnake98) - [Discord](https://discord.com/users/628633598001414165) - hellsnakess@hotmail.com
+* HELLSNAKE - [Facebook](https://www.facebook.com/666) - [Discord](https://discord.com/users/666) - hellsnakess@hotmail.com
 
 ## Author
 * [HELLSNAKE](https://github.com/HELLSNAKES)
 
 ## License
-Released under the [MIT License](https://github.com/HELLSNAKES/Music-Slash-Bot/blob/main/LICENSE)
+Released under the [MIT License](https://github.com/NguyenVietCuong-2512/Music-Slash-Bot/blob/main/LICENSE)
 
 ## Deploy Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/Music-Slash-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NguyenVietCuong-2512/Music-Slash-Bot)
 
-Note: Heroku Button is currently not working -> [Issues](https://github.com/HELLSNAKES/Music-Slash-Bot/issues/6)
+Note: Heroku Button is currently not working -> [Issues](https://github.com/NguyenVietCuong-2512/Music-Slash-Bot/issues/6)
 
 ## Project Activity
 
